@@ -9,59 +9,69 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body style="background-color: #1c1917">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-        <div class="container-fluid">
-            <a class="navbar-brand  text-white" href="../index.html">FRC Wiki</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="../about.html">About</a>
+<body class="bg-dark">
+
+
+
+    <div id="container">
+        <div id="sidebar">
+            <!-- Sidebar contents -->
+            <div id="sidebar-content" style="height: 800px; padding-top: 10%;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="10" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4"><b>FRC Wiki</b></span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="../index.html" class="nav-link text-white">🏠&nbsp;&nbsp;&nbsp;Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Technical
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">CAD and Design</a></li>
-                            <li><a class="dropdown-item" href="#">Manufacturing</a></li>
-                            <li><a class="dropdown-item" href="#">Programming</a></li>
-                            <li><a class="dropdown-item" href="#">Electronics</a></li>
-                        </ul>
+                    <li>
+                        <a href="#" class="nav-link text-white">📐&nbsp;&nbsp;&nbsp;CAD and Design</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdownMenuLink"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Business
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Branding</a></li>
-                            <li><a class="dropdown-item" href="#">Outreach</a></li>
-                            <li><a class="dropdown-item" href="#">Entreprenuership</a></li>
-                        </ul>
+                    <li>
+                        <a href="#" class="nav-link text-white">🔋&nbsp;&nbsp;&nbsp;Electronics</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white">Scouting</a>
+                    <li>
+                        <a href="prog/prog-home.html" class="nav-link text-white">💻&nbsp;&nbsp;&nbsp;Software</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white">Blog</a>
+                    <li>
+                        <a href="#" class="nav-link text-white">📸&nbsp;&nbsp;&nbsp;Business</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">🗞&nbsp;&nbsp;&nbsp;Blog</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link text-white">🕹&nbsp;&nbsp;&nbsp;About</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+        <!--
+    -->
+        <div id="content">
+            <!-- Main contents -->
+            <div class="bg-dark" id="main-content" style="height: 800px">
+                <div class="bg-dark text-secondary px-4 text-left">
+                    <h1 class="display-6 fw-bold text-white">💻&nbsp;&nbsp;FRC Software Overview</h1>
+                    <div class="col-lg-9">
+                        <p class="fs-7 mb-6"></p>
+                        <p class="fs-7 mb-6">Home to everything on FRC programming, controls engineering, systems setup,
+                            troubleshooting, and more. Browse FRC Software resources including topic docs, slides,
+                            videos, and more!</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar sticky-bottom navbar-light bg-dark">
+                <div class="container-fluid">
+                    <small style="padding:10px;padding-top:15px;color:#adb5bd"><b>HOSTED WITH ❤️ BY TEAM 1967 THE
+                            JANKSTERS</b></small>
+                </div>
+            </nav>
 
-    <div style="padding-left:20px;padding-right: 20px">
-    <h3 style="padding:10px;padding-top:20px;color:#adb5bd"><b>Get Started with FRC Programming</b></h3>
+        </div>
     </div>
-
-</body>
-
-</html>
