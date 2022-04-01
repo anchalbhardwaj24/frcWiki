@@ -9,65 +9,65 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #1c1917">
+<body class="bg-dark">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand  text-white" href="index.html">FRC Wiki</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <small class="text-white"><b>TECHNICAL</b></small>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">CAD and Design</a></li>
-              <li><a class="dropdown-item" href="#">Manufacturing</a></li>
-              <li><a class="dropdown-item" href="prog/prog-home.html">Programming</a></li>
-              <li><a class="dropdown-item" href="#">Electronics</a></li>
-            </ul>
+
+
+  <div id="container">
+    <div id="sidebar">
+      <!-- Sidebar contents -->
+      <div id="sidebar-content" style="height: 800px; padding-top: 10%;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi me-2" width="10" height="32">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <span class="fs-4"><b>FRC Wiki</b></span>
+        </a>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a href="#" class="nav-link text-white">🏠&nbsp;&nbsp;&nbsp;Home</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <small class="text-white"><b>NON-TECH</b></small>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Branding</a></li>
-              <li><a class="dropdown-item" href="#">Outreach</a></li>
-              <li><a class="dropdown-item" href="#">Entreprenuership</a></li>
-            </ul>
+          <li>
+            <a href="#" class="nav-link text-white">📐&nbsp;&nbsp;&nbsp;CAD and Design</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  text-white"><small class="text-white"><b>STRATEGY</b></small></a>
+          <li>
+            <a href="#" class="nav-link text-white">🔋&nbsp;&nbsp;&nbsp;Electronics</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  text-white"><small class="text-white"><b>BLOG</b></small></a>
+          <li>
+            <a href="prog/prog-home.html" class="nav-link text-white">💻&nbsp;&nbsp;&nbsp;Software</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="about.html"><small
-                class="text-white"><b>ABOUT</b></small></a>
+          <li>
+            <a href="#" class="nav-link text-white">📸&nbsp;&nbsp;&nbsp;Business</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">🗞&nbsp;&nbsp;&nbsp;Blog</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link text-white active">🕹&nbsp;&nbsp;&nbsp;About</a>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <div style="padding-left:20px;padding-right: 20px">
-
-    <h3 style="padding:10px;padding-top:20px;color:#adb5bd">Student Staff</h3>
+    </div><!--
+   --><div id="content">
+      <!-- Main contents -->
+      <div class="bg-dark" id="main-content" style="height: 800px">
+        <div class="bg-dark text-secondary px-4 text-left">
+          <h1 class="display-5 fw-bold text-white">FRC Wiki</h1>
+          <div class="col-lg-9">
+           <!--  <p class="fs-5 mb-6">A student-run collaborative documentation website making FRC
+              knowledge more approachable and
+              accessible. Learn anything from CAD and design to FRC Programming in minutes at FRC Wiki. Check out our About
+              page to meet the team behind the site</p> -->
+              <!-- <h3 style="padding:10px;padding-top:20px;color:#adb5bd">Student Staff</h3> -->
+              <h3 class="display-8 fw-bold text-white" style = "margin-left:10px">Student Staff</h3>
 
     <div class="row" style="padding:10px">
       <div class="col-sm-3">
         <div class="card text-white bg-dark ">
-          <!--<img src="img/anchal-prof-pic.jpeg" class="card-img-top" alt="..." style="padding:10px">-->
+          <img src="img/anchal-prof-pic.jpeg" class="card-img-top" alt="..." style="padding:10px">
           <div class="card-body">
             <h5 class="card-title">Anchal Bhardwaj</h5>
             <p class="card-text"><small class="text-muted">Student Lead</small></p>
@@ -76,7 +76,129 @@
       </div>
       <div class="col-sm-3">
         <div class="card text-white bg-dark ">
-          <!--<img src="img/joyce-prof-pic.jpeg" class="card-img-top" alt="..." style="padding:10px">-->
+          <img src="img/joyce-prof-pic.jpeg" class="card-img-top" alt="..." style="padding:10px">
+          <div class="card-body">
+            <h5 class="card-title">Joyce Yang</h5>
+            <p class="card-text"><small class="text-muted">Student Lead</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <div style="padding-left:20px;padding-right: 20px"> -->
+    <!-- <h3 style="padding-top:20px;color:#adb5bd">Meet the Team</h3>
+ -->
+  <h3 class="display-8 fw-bold text-white" style = "margin-left:10px">Team Contributors</h3>
+    <div class="row" style="padding:10px">
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">1967</h5>
+            <p class="card-text"><small class="text-muted">Notre Dame High School <br> The Janksters</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">3256</h5>
+            <p class="card-text"><small class="text-muted">Valley Christian High School <br> WarriorBorgs</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">2813</h5>
+            <p class="card-text"><small class="text-muted">Prospect High School <br> The GearHeads</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">971</h5>
+            <p class="card-text"><small class="text-muted">Mountain View High School <br>Spartan Robotics</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <h3 style="padding-top:20px;color:#adb5bd">Mentor Board</h3> -->
+ <h3 class="display-8 fw-bold text-white" style = "margin-left:10px">Mentor Boards</h3>
+    <div class="row" style="padding:10px">
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">Dean Mulla</h5>
+            <p class="card-text"><small class="text-muted">Manufacturing, Design <br> The Janksters</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">Alvin Cheng</h5>
+            <p class="card-text"><small class="text-muted">Manufacturing, Design <br> The Janksters</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">Bob Wolff</h5>
+            <p class="card-text"><small class="text-muted">Programming <br> The Janksters</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <div class="card-body">
+            <h5 class="card-title">Randy Leberknight</h5>
+            <p class="card-text"><small class="text-muted">Programming <br> The Janksters</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  
+       
+        </div>
+      </div>
+
+      <div style = "margin-top:40px"></div>
+      <nav class="navbar sticky-bottom navbar-light bg-dark">
+        <div class="container-fluid">
+          <small style="padding:10px;padding-top:15px;color:#adb5bd"><b>HOSTED WITH ❤️ BY TEAM 1967 THE JANKSTERS</b></small>
+        </div>
+      </nav>
+    
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+    <!-- <h3 style="padding:10px;padding-top:20px;color:#adb5bd">Student Staff</h3>
+
+    <div class="row" style="padding:10px">
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <img src="img/anchal-prof-pic.jpeg" class="card-img-top" alt="..." style="padding:10px">
+          <div class="card-body">
+            <h5 class="card-title">Anchal Bhardwaj</h5>
+            <p class="card-text"><small class="text-muted">Student Lead</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text-white bg-dark ">
+          <!--<img src="img/joyce-prof-pic.jpeg" class="card-img-top" alt="..." style="padding:10px">
           <div class="card-body">
             <h5 class="card-title">Joyce Yang</h5>
             <p class="card-text"><small class="text-muted">Student Lead</small></p>
@@ -197,13 +319,5 @@
     <div style="padding-bottom:30px"></div>
 
   </div>
-
-  <nav class="navbar sticky-bottom navbar-light" style="background-color: #292524">
-    <div class="container-fluid">
-      <small style="padding:10px;padding-top:15px;color:#adb5bd"><b>HOSTED WITH ❤️ BY TEAM 1967 THE
-          JANKSTERS</b></small>
-    </div>
-  </nav>
-</body>
-
-</html>
+ -->
+ 
