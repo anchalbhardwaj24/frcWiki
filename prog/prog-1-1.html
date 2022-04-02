@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-dark">
+    <div id="container">
+        <div id="sidebar">
+            <!-- Sidebar contents -->
+            <div id="sidebar-content" style="height: 1800px; padding-top: 10%;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="10" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4"><b>FRC Wiki</b></span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="../index.html" class="nav-link text-white">🏠&nbsp;&nbsp;&nbsp;Home</a>
+                    </li>
+                    <li>
+                        <a href="../mech/mech-home.html" class="nav-link text-white">📐&nbsp;&nbsp;&nbsp;CAD and
+                            Design</a>
+                    </li>
+                    <li>
+                        <a href="../elec/elec-home.html" class="nav-link text-white">🔋&nbsp;&nbsp;&nbsp;Electronics</a>
+                    </li>
+                    <li>
+                        <a href="prog-home.html" class="nav-link active text-white">💻&nbsp;&nbsp;&nbsp;Software</a>
+                    </li>
+                    <li>
+                        <a href="../biz/biz-home.html" class="nav-link text-white">📸&nbsp;&nbsp;&nbsp;Business</a>
+                    </li>
+                    <li>
+                        <a href="../blog/blog-home.html" class="nav-link text-white">🗞&nbsp;&nbsp;&nbsp;Blog</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="nav-link text-white">🕹&nbsp;&nbsp;&nbsp;About</a>
+                    </li>
+                    <li>
+                        <a href="../rb.html" class="nav-link text-white">💸&nbsp;&nbsp;&nbsp;Resource Bank</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        -->
+        <div id="content">
+            <!-- Main contents -->
+            <div class="bg-dark" id="main-content" style="height: 1500px">
+                <div class="bg-dark text-secondary px-4 text-left">
+                    <div class="bg-dark text-secondary px-4 text-left">
+                        <h2 class="display-6 fw-bold text-white">🎮&nbsp;What Does Software Do?</h2>
+                        <div class="col-lg-9">
+                            <p class="fs-6">6 min read > Article > Joyce Yang > 4/1/22</p><br>
+                            <h5><small class="text-muted"><b>INTRODUCTION</b></small></h5>
+                            <p class="fs-6 text-white">FRC Programming can be confusing at first because instead of just
+                                writing code and running it on your local machine to print some kind of output or view a
+                                tangible, usually numerical result, hardware is now put into the mix. While the end goal
+                                is clear (drive the robot, move its subparts, follow a path), the “how” can get a bit
+                                complex. In short, FRC Programming encapsulates both hardware and software components
+                                that are tied together by programming languages to make robot's perform certain actions.
+                            </p>
+                            <h5><small class="text-muted"><b>WHAT WE DO</b></small></h5>
+                            <p class="fs-6 text-white">Basic driving controls and controls, autonomous actions, and
+                                sensor feedback are possible with FRC programming. For example, we can map buttons to
+                                various controls and program the Robot to drive using joysticks. It is also possible to
+                                have the robot perform actions without controls based on time. Sensor feedback can be
+                                done with components such as encoders and gyros; advanced programming uses the feedback
+                                to control or plan robot movement. It's important to note that robot actions build on
+                                top of each other that almost all parts of a Robot program is interconnected with each
+                                other.
+                            </p>
+                            <h5><small class="text-muted"><b>COMPONENT INTRODUCTION</b></small></h5>
+                            <p class="fs-6 text-white">What exactly does the Programming committee program? For FRC, we
+                                mainly code the robot's main "computer" called the RoboRIO; it controls the common
+                                sensors and actuators used in advanced robotics applications. Sensors essentially allow
+                                the robot to get feedback about its environment and use this information to improve
+                                robot movement or complete certain tasks. Other hardware components that are involved in
+                                FRC programming include the CTRE Power Distribution Panel (PDP), OM5P-AC Radio, CTRE
+                                Pneumatics Control Module, Motor Controllers, and much more. Some examples of software
+                                components include Visual Studio Code, FRC Driver Station, Smart Dashboard, FRC roboRIO
+                                Imaging Tool, and Pathweaver. These components will be introduced in more depth in each
+                                section.
+                            </p>
+                            <h5><small class="text-muted"><b>PROGRAMMING LANGUAGES</b></small></h5>
+                            <p class="fs-6 text-white">This guide is centered around Java, but other languages can also
+                                be used, namely C++/C. Java is a high-level, class-based, object-oriented programming
+                                language. Let’s break that down. A “high-level” programming language is one with strong
+                                abstraction from the details of the computer. Meaning, the computer understands
+                                instructions in machine language (1’s and 0’s) but we write in a more human-intuitive
+                                language (Java) that is translated into what the computer can understand.
+                                “Object-oriented programming” (OOP) is a programming model that organizes design around
+                                data rather than logic and functions; this will become more clear with examples.
+                                “Class-based” is simply a style of OOP in which inheritance happens through defining
+                                classes of objects, instead of inheritance occurring through the objects alone.
+                                Inheritance, classes, and objects will also be clarified, but this is a brief
+                                description to just distinguish Java from other programming languages. It’s important to
+                                have a solid Java (or C++ if that is the language being used) foundation because it
+                                would be frustrating to wrangle with syntax errors or conceptual gaps while trying to
+                                debug a very niche error.
+                            </p>
+                            <h5><small class="text-muted"><b>HOW TO USE FRC WIKI</b></small></h5>
+                            <p class="fs-6 text-white">These pages are designed to give a quick look into all the moving
+                                parts when it comes to FRC programming and help beginner students gain fundamental
+                                knowledge of Robot code and logic. Veterans can use this to brush up their knowledge or
+                                find out more about exactly how FRC programming works if you're visiting from other
+                                committees. Cool things happen when things work! And, it’s pretty interesting to learn
+                                about how we can write in a language that can make a 120 pound robot come to life.
+                                Hopefully, this guide to FRC Programming and Java is helpful; we’ve included everything
+                                from basic syntax (important!) to how WPILib classes are used to code subsystems.
+                                Each section has a collection of slides, lesson plans, and documentation that can be
+                                used for general information checks or used to teach rookies FRC programming in an
+                                organized, comprehensive format. Slides may be accompanied by videos made by students
+                                and approved by mentors. Happy coding!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
