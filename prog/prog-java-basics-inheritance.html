@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-dark">
+    <div id="container">
+        <div id="sidebar">
+            <!-- Sidebar contents -->
+            <div id="sidebar-content" style="height: 1800px; padding-top: 10%;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="10" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4"><b>FRC Wiki</b></span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="../index.html" class="nav-link text-white">🏠&nbsp;&nbsp;&nbsp;Home</a>
+                    </li>
+                    <li>
+                        <a href="../mech/mech-home.html" class="nav-link text-white">📐&nbsp;&nbsp;&nbsp;CAD and
+                            Design</a>
+                    </li>
+                    <li>
+                        <a href="../elec/elec-home.html" class="nav-link text-white">🔋&nbsp;&nbsp;&nbsp;Electronics</a>
+                    </li>
+                    <li>
+                        <a href="prog-home.html" class="nav-link active text-white">💻&nbsp;&nbsp;&nbsp;Software</a>
+                    </li>
+                    <li>
+                        <a href="../biz/biz-home.html" class="nav-link text-white">📸&nbsp;&nbsp;&nbsp;Business</a>
+                    </li>
+                    <li>
+                        <a href="../blog/blog-home.html" class="nav-link text-white">🗞&nbsp;&nbsp;&nbsp;Blog</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="nav-link text-white">🕹&nbsp;&nbsp;&nbsp;About</a>
+                    </li>
+                    <li>
+                        <a href="../rb.html" class="nav-link text-white">💸&nbsp;&nbsp;&nbsp;Resource Bank</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        -->
+        <div id="content">
+            <!-- Main contents -->
+            <div class="bg-dark" id="main-content" style="height: 1100px">
+                <div class="bg-dark text-secondary px-4 text-left">
+                    <div class="bg-dark text-secondary px-4 text-left">
+                        <h2 class="display-6 fw-bold text-white">☕️&nbsp;Inheritance</h2>
+                        <div class="col-lg-9">
+                            <p class="fs-6">5 min read > Topic Docs > Anchal Bhardwaj > 4/2/22</p><br>
+                            <h5><small style="color:cornflowerblue"><b>WHAT IS INHERITANCE?</b></small></h5>
+                            <p class="fs-6 text-white">Inheritance is where classes adopt a hierarchical structure, inheriting properties from another class. It is often used in Object Oriented programming, which Java happens to be. Inheritance is especially key for code reusability which means we can have code from a base class that we use for other classes without copy pasting values and methods. Let’s go into more detail. 
+<br><br>
+We use a super class which has methods and variables that are inherited by the sub class. These fields and methods can be used in the subclass method directly, as if they were part of the class itself. In addition to the inherited properities, we can also create new fields and instance methods that have the same method signature (overriding) or create completely new methods that are not in the super class at all. Lastly, we can also make a subclass constructor which invokes the constructor in the superclass (keyword super) or make a unique constructor. 
+<br><br>
+If we want to think of it in terms of real life examples, think of a Car superclass and subclasses which are different types of cars. Each of the subclasses (types of Car) have their own properties but inherit common properties from the super class.
+
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>BASIC TERMINOLOGY</b></small></h5>
+                            <p class="fs-6 text-white"> <b>Super Class:</b> The class whose features are inherited is known as superclass(or a base class or a parent class). <br><br>
+<b>Sub Class:</b> The class that inherits the other class is known as a subclass(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods. <br><br>
+<b>Extends:</b> keyword used to inherit the properties of a class<br><br>
+<b>Super:</b> a  keyword that differentiates the members of superclass from the members of subclass, if they have the same names and are also used to invoke the super class constructor in the super class.<br>
+
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>OVERLOADING AND OVERRIDING</b></small></h5>
+                            <p class="fs-6 text-white">Overloading and overriding are used when we want to inherit or ignore methods used in the subclass and superclass. Overloading is used for methods that are in the same class but have the same name. In order to allow the compiler to differentiate between the two, we have to have either a different return type or different arguments being passed in as indicated in the method signature. 
+<br><br>
+Overriding is where it gets fun. Overriding is when we have a method that is already defined in the super class but we want to change it up with the subclass so we put an override statement on top of the method we are changing and then redefine the method in the subclass to do something different. 
+
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>SINGLE INHERITANCE VS MULTILEVEL INHERITANCE
+</b></small></h5>
+                            <p class="fs-6 text-white"> Single Inheritance is the base version of Inheritance which means that subclasses are inheriting from one super class. In the class definition, the subclass would extend from the superclass and inherit all of the public methods and variables from the superclass. 
+<br><br>
+Multilevel Inheritance is where a subclass will inherit from another superclass while also behaving as a super class for another class. For example, A is a superclass for B and B is a superclass for C. It sounds confusing but with a visual representation, it starts to clear up. 
+<br><br>
+<img src = "../img/prog-java-basics-inheritance.png" style = "width:60%">
+
+<br><br>
+There are other types of inheritance including Hierarchical Inheritance, Multiple Inheritance, and Hybrid Inheritance which work through Java interfaces but they are not as commonly used in FIRST programming. More information can be found <a href = "https://www.geeksforgeeks.org/inheritance-in-java/"> here. </a>
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>EXAMPLES</b></small></h5>
+                            <p class="fs-6 text-white"> Here are some code examples and walkthroughs that you can look at which demonstrate inheritance with real life objects. (<a href = https://www.programiz.com/java-programming/inheritance">1</a>, <a href = "https://www.tutorialspoint.com/java/java_inheritance.htm">2</a>, <a href = "https://beginnersbook.com/2013/03/inheritance-in-java/">3</a>)
+
+                            </p>
+                        </div>
+                        <div style = "padding:20px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
