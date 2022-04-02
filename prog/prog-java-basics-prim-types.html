@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-dark">
+    <div id="container">
+        <div id="sidebar">
+            <!-- Sidebar contents -->
+            <div id="sidebar-content" style="height: 1800px; padding-top: 10%;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="10" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4"><b>FRC Wiki</b></span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="../index.html" class="nav-link text-white">🏠&nbsp;&nbsp;&nbsp;Home</a>
+                    </li>
+                    <li>
+                        <a href="../mech/mech-home.html" class="nav-link text-white">📐&nbsp;&nbsp;&nbsp;CAD and
+                            Design</a>
+                    </li>
+                    <li>
+                        <a href="../elec/elec-home.html" class="nav-link text-white">🔋&nbsp;&nbsp;&nbsp;Electronics</a>
+                    </li>
+                    <li>
+                        <a href="prog-home.html" class="nav-link active text-white">💻&nbsp;&nbsp;&nbsp;Software</a>
+                    </li>
+                    <li>
+                        <a href="../biz/biz-home.html" class="nav-link text-white">📸&nbsp;&nbsp;&nbsp;Business</a>
+                    </li>
+                    <li>
+                        <a href="../blog/blog-home.html" class="nav-link text-white">🗞&nbsp;&nbsp;&nbsp;Blog</a>
+                    </li>
+                    <li>
+                        <a href="../about.html" class="nav-link text-white">🕹&nbsp;&nbsp;&nbsp;About</a>
+                    </li>
+                    <li>
+                        <a href="../rb.html" class="nav-link text-white">💸&nbsp;&nbsp;&nbsp;Resource Bank</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        -->
+        <div id="content">
+            <!-- Main contents -->
+            <div class="bg-dark" id="main-content" style="height: 1100px">
+                <div class="bg-dark text-secondary px-4 text-left">
+                    <div class="bg-dark text-secondary px-4 text-left">
+                        <h2 class="display-6 fw-bold text-white">☕️&nbsp;Primitive Types</h2>
+                        <div class="col-lg-9">
+                            <p class="fs-6">5 min read > Topic Docs > Katelyn Lee > 4/2/22</p><br>
+                            <p class="fs-6 text-white">To understand what a data type is in the first place, we need to
+                                understand what a bit and variable is. A <b style="color:cornflowerblue">bit</b> is the
+                                smallest unit of data a
+                                computer can handle (stands for binary digit). A byte contains 8 bits. A <b
+                                    style="color:cornflowerblue">variable</b>
+                                is a placeholder for any type of data, or a sort of container that holds a value in
+                                memory. <br><br>
+                                <b style="color:cornflowerblue">Primitive variables</b> are one of the two types of
+                                variables used in Java
+                                programming which contain the <u>value</u> of a data type. A primitive variable’s
+                                declared data
+                                type is a <u>primitive data type</u>. A data type tells the computer how much memory is
+                                needed
+                                to store data. <br><br>
+                                <b style="color:cornflowerblue">Example:</b> <code>int numberOfMembers </code>→ int is the primitive data type, numberOfMembers is a primitive
+                                variable that stores the “number of members” <br><br>
+                                There are four primitive data types: <b style="color:cornflowerblue">integer,
+                                    floating-point, boolean, and char</b> →
+                                ​​these types represent raw values.
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>INTEGERS</b></small></h5>
+                            <p class="fs-6 text-white"> Bytes allocate 8 bits and represent values of integers 128 to
+                                127. Short allocates 16 bits and represents values of integers 32,768 to 32,767. Int
+                                allocates 32 bits (or 4 bytes) of space in memory and represents values of integers -231
+                                to 231 -1. Long allocates 64 bits and represents integers -263 to 263 - 1
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>FLOATING POINT NUMBERS</b></small></h5>
+                            <p class="fs-6 text-white">Boolean values allocate 8 bits or 1 byte and represent either
+                                true or false. Due to the two possible values of a boolean, they only need one bit, but
+                                variables cannot be stored if they are smaller than 1 byte. Thus, the remaining 7 bits
+                                are stuffed.
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>BOOLEANS</b></small></h5>
+                            <p class="fs-6 text-white"> Floating point numbers, such as double and float, allow decimal
+                                numbers. Float allocates 32 bits and can represent up to 7 decimal places, whereas
+                                double allocates 64 bits for the ability to represent up to 16 decimal points. Syntax
+                                unique to float is adding “f” to the end of the value, as otherwise it will be treated
+                                as a double.
+                            </p>
+                            <h5><small style="color:cornflowerblue"><b>CHARACTERS</b></small></h5>
+                            <p class="fs-6 text-white"> Character types called char allocate 16 bits and hold the value
+                                of a single character or digit, such as a letter, number, or symbol. They are surrounded
+                                by single quotes. You should always choose the smallest data type needed when choosing the type for your
+                                variables to speed up your computer program and use less memory.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
